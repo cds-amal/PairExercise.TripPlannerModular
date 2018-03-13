@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,60 @@
   <link href='https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' rel='stylesheet' />
   <script src="bundle.js" defer></script>
 </head>
+
 <body>
-  <div id="map"></div>
+  <header>
+    <h1>Trip Planner</h1>
+    <nav>Some navigation content</nav>
+  </header>
+  <div id="container">
+    <div id="map"></div>
+    <div id="sidebar">
+      <div id="choices">
+        <div>
+          <h4><label for="hotel" class="col-sm-2 control-label">Hotels</label></h4>
+          <select id="hotel" name="hotel" class="form-control">
+                  <option value="hotel001">hotel001</option>
+                  <option value="hotel002">hotel002</option>
+                  <option value="hotel003">hotel003</option>
+                  <option value="hotel004">hotel004</option>
+                  <option value="hotel005">hotel005</option>
+                </select>
+          <button id="btn-hotel">x</button>
+        </div>
+        <div>
+          <h4><label for="restaurant" class="col-sm-2 control-label">Restaurants</label></h4>
+          <select id="restaurant" name="restaurant" class="form-control">
+                  <option value="hotel001">hotel001</option>
+                  <option value="hotel002">hotel002</option>
+                  <option value="hotel003">hotel003</option>
+                  <option value="hotel004">hotel004</option>
+                  <option value="hotel005">hotel005</option>
+                </select>
+          <button id="btn-restaurant">x</button>
+        </div>
+        <div>
+          <h4><label for="activity" class="col-sm-2 control-label">Things to do</label></h4>
+          <select id="activity" name="activity" class="form-control">
+                  <option value="hotel001">hotel001</option>
+                  <option value="hotel002">hotel002</option>
+                  <option value="hotel003">hotel003</option>
+                  <option value="hotel004">hotel004</option>
+                  <option value="hotel005">hotel005</option>
+                </select>
+          <button id="btn-activity">x</button>
+        </div>
+      </div>
+      <div id="itinerary">
+        <div id="heading">
+          <h3>Itinerary</h3>
+        </div>
+        <div id="itinerary-content">
+          CONTENT!
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

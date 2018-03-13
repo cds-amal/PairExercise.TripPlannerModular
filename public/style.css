@@ -8,7 +8,42 @@ body {
   background-color: #c1b5ad;
 }
 
-#map {
+#container {
   height: 100vh;
-  width: 100vw;
+  /* width: 100vw; */
+  display: flex;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  flex-grow: 2;
+}
+
+#sidebar {
+  flex-basis: 33%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+
+#sidebar > #choices,
+#heading,
+#itinerary-content {
+  /* text-align: right; */
+  padding: 15px;
+}
+
+#choices {
+  background-color: brown;
+}
+
+#itinerary {
+  background-color: green;
+}
+
+#heading {
+  width: 100%;
+  background-color: orange;
 }
