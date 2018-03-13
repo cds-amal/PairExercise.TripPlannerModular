@@ -9,9 +9,9 @@ body {
 }
 
 #container {
-  height: 100vh;
-  /* width: 100vw; */
   display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 #map {
@@ -47,3 +47,22 @@ body {
   width: 100%;
   background-color: orange;
 }
+
+@media(min-width: 500px){
+    #container {
+        flex-direction: row;
+    }
+    #map {
+      height: 100%;
+      width: 100%;
+      flex-grow: 2;
+    }
+
+    #sidebar {
+      flex-basis: 33%;
+      flex-grow: 1;
+      display: flex;
+      align-content: flex-end;
+    }
+}
+
